@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Easy Bites - Recipe Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e7f2ff;
+            margin: 0;
+        }
+        header {
+            background-color: #1b4b82;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        main {
+            padding: 15px;
+        }
+        section {
+            background-color: white;
+            border: 1px solid #c4d7f2;
+            padding: 10px 15px;
+            margin-bottom: 12px;
+        }
+        h2 {
+            margin-top: 0;
+            color: #1b4b82;
+        }
+        ul {
+            padding-left: 18px;
+        }
+        .rating {
+            font-size: 14px;
+            color: #ff9800;
+        }
+        .tags span {
+            display: inline-block;
+            background-color: #e0edff;
+            border: 1px solid #c4d7f2;
+            padding: 2px 6px;
+            margin: 2px 4px 2px 0;
+            font-size: 12px;
+        }
+        label {
+            display: block;
+            margin-top: 6px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 3px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: auto;
+            margin-top: 8px;
+            background-color: #1b4b82;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Easy Bites</h1>
+    <p>Quick recipes for students and busy people</p>
+</header>
+
+<main>
+
+    <section>
+        <h2>Categories</h2>
+        <ul>
+            <li>Breakfast</li>
+            <li>Snacks</li>
+            <li>One-Pot Meals</li>
+            <li>Drinks</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Featured Recipe: Masala Maggi</h2>
+        <p class="rating">Rating: ★★★★☆ (4/5)</p>
+        <div class="tags">
+            <span>#Snacks</span>
+            <span>#Quick</span>
+            <span>#Hostel</span>
+        </div>
+        <p><b>Ingredients:</b></p>
+        <ul>
+            <li>Maggi noodles – 1 packet</li>
+            <li>Onion, tomato – small, chopped</li>
+            <li>Oil, salt, chilli and masala as per taste</li>
+        </ul>
+        <p><b>Steps:</b> Boil noodles, fry veggies in a pan, add taste maker and spices, then mix everything.</p>
+    </section>
+
+    <section>
+        <h2>Other Recipes</h2>
+        <ul>
+            <li>
+                <b>Cold Coffee</b> – Rating: ★★★★☆ – Milk, coffee, sugar and ice blended together.
+            </li>
+            <li>
+                <b>Veg Sandwich</b> – Rating: ★★★☆☆ – Bread with simple veggies and sauce, toasted.
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>User-Submitted Recipe</h2>
+        <p>Share your own simple recipe using this form.</p>
+
+        <form>
+            <label>Your Name:</label>
+            <input type="text">
+
+            <label>Recipe Title:</label>
+            <input type="text">
+
+            <label>Category:</label>
+            <select>
+                <option>Breakfast</option>
+                <option>Snacks</option>
+                <option>Main Course</option>
+                <option>Drinks</option>
+            </select>
+
+            <label>Ingredients:</label>
+            <textarea rows="3" placeholder="List ingredients here"></textarea>
+
+            <label>Steps:</label>
+            <textarea rows="4" placeholder="Write simple step-by-step method"></textarea>
+
+            <label>Your Rating (1-5):</label>
+            <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+            <input type="submit" value="Submit Recipe">
+        </form>
+    </section>
+
+</main>
+
+</body>
+</html>
